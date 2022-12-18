@@ -96,6 +96,7 @@ svg {
 .our-work ul .active {
     background-color: var(--red);
     color: var(--yellow);
+    border-radius: 20px;
 }
 
 .our-work ul li {
