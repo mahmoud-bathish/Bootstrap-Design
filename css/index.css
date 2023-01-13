@@ -35,6 +35,7 @@ body {
 
 .navbar {
     background: black;
+    z-index: 10;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -65,10 +66,20 @@ svg {
 }
 
 .landing {
-    background-color: var(--black);
+    background-image: url("../imgs/main_image.png");
     min-height: calc(100vh - 72px);
 }
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: rgba(0,0,0, 0.5);
+}
+.text-center.text-light {
+    z-index: 10;
+}
 /* Start Features */
+
 
 .features .icon-holder {
      height: 200px;
