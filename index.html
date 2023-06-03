@@ -10,6 +10,8 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="/imgs/title.png">
     <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,20 +32,20 @@
           </button>
           <div class="collapse navbar-collapse" id="main">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link p-2 p-lg-1 active" aria-current="page" href="#">Home</a>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link p-2 p-lg-1" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link p-2 p-lg-1" href="#">Services</a>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link p-2 p-lg-1" href="#services">Services</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link p-2 p-lg-1" href="#">Portfolio</a>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link p-2 p-lg-1" href="#portfolio">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link p-2 p-lg-1" href="#">About</a>
+              <li class="nav-item px-lg-2">
+                <a class="nav-link p-2 p-lg-1" href="#about">About</a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link p-2 p-lg-1" href="#">Contact</a>
+            <li class="nav-item px-lg-2">
+              <a class="nav-link p-2 p-lg-1" href="#contact">Contact</a>
             </li>
             </ul>
             <div class="search ps-3 pe-3 d-none d-lg-block">
@@ -62,7 +64,7 @@
         </div>
       </div>
       <!-- Start Features -->
-      <div class="features text-center pt-5 pb-5">
+      <div id="services" class="features text-center pt-5 pb-5">
         <div class="container">
         <div class="main-title mb-5 mt-5 position-relative">
           <img class="mb-4" src="./imgs/title.png" alt="">
@@ -104,7 +106,7 @@
       </div>
     </div>
     <!-- Start Portfolio -->
-    <div class="our-work text-center pt-5 pb-5">
+    <divf id="portfolio" class="our-work text-center pt-5 pb-5">
       <div class="container">
         <div class="main-title mt-5 mb-5 position-relative">
           <img class="mb-4" src="imgs/title.png" alt="" />
@@ -164,9 +166,9 @@
           <a class="btn rounded-pill main-btn text-uppercase" href="#">I Want More</a>
         </div>
       </div>
-    </div>
+    </divf>
     <!-- Start Stuff -->
-    <div class="stuff pt-5">
+    <div id="about" class="stuff pt-5">
       <div class="container">
         <div class="main-title text-center mt-5 mb-5 position-relative">
           <img class="mb-4" src="imgs/title.png" alt="" />
@@ -273,7 +275,7 @@
         </div>
       </div>
     </div>
-    <div class="project text-center pt-5 pb-5 text-light">
+    <div id="contact" class="project text-center pt-5 pb-5 text-light">
       <h2>Start Your Project Now</h2>
       <p class="text-white-50">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
       <div class="d-flex justify-content-center mt-5 mb-5">
@@ -331,7 +333,7 @@
             <input class="w-100 text-light p-2 bg-transparent" type="text" placeholder="Enter Email Address" />
           </div>
           <div class="col-md-6 col-lg-2">
-            <input class="btn rounded-pill" type="submit" value="Subscribe" />
+            <input class="btn rounded-pill" style="pointer-events: none;" type="submit" value="Subscribe" />
           </div>
         </form>
       </div>
@@ -384,22 +386,22 @@
               <a class="btn rounded-pill main-btn w-100" href="#">graphberry@gmail.com</a>
               <ul class="d-flex mt-5 list-unstyled gap-3">
                 <li>
-                  <a class="d-block text-light" href="#"
+                  <a class="pointer-none d-block text-light" href="#"
                     ><i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="d-block text-light" href="#"
+                  <a class="pointer-none d-block text-light" href="#"
                     ><i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="d-block text-light" href="#"
+                  <a class="pointer-none d-block text-light" href="#"
                     ><i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="d-block text-light" href="#"
+                  <a class="pointer-none d-block text-light" href="#"
                     ><i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i
                   ></a>
                 </li>

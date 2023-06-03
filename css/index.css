@@ -10,10 +10,31 @@ body {
     font-family: 'Roboto',sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #757575;
+    border-radius: 30px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #716666;
+  }
+
 .main-btn {
      background-color: var(--red);
      color: var(--yellow);
      padding: 0.5rem 1rem;
+     pointer-events: none;
 }
 
 .main-btn:hover {
@@ -32,6 +53,10 @@ body {
 }
 
 /* Start Navbar */
+
+.pointer-none{
+    pointer-events: none;
+}
 
 .navbar {
     background: black;
@@ -68,10 +93,11 @@ svg {
 .landing {
     background-image: url("../imgs/main_image.png");
     min-height: calc(100vh - 72px);
+    background-attachment: fixed;
 }
 .overlay {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 70px);
     background-color: rgba(0,0,0, 0.5);
 }
